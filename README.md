@@ -1,3 +1,3 @@
 # Github-Markdown
 
-A quick How-to
+Quick guide to markdown. 
