@@ -1,0 +1,61 @@
+How to use Atom with Githu (EASIEST WAY POSSIBLE)
+
+First download Git for Windows, Mac or linux
+Then install Atom editor (It's FOSS)
+
+Then open the Editor press
+
+ctrl+shift+p
+
+type Github clone
+
+Go to github and copy the HTTS url for the repository you want to clone.
+
+Paste the url
+click on clone
+
+Atom will ask to connect with your credentials and sync with github
+
+Done!
+
+
+----
+
+Some basics usage:
+
+Keep open the Git panel on Atom on the right
+
+On the left side keep the repositories open.
+
+You can work in multiple repositories at the same time of course
+
+To commit and push
+
+let's first create a file (shortcut is the key 'A') (remember to not insert
+slashes in the name of the file as these will create folders)
+
+Type a name. In case you wish to rename press F2
+
+Put some text for testing
+
+(You can also save your text with ctrl+s)
+
+
+Now on the Git panel (aka tab) select the repository that you are changing
+
+You will see Unstaged Changes (the file will become also green colored)
+
+click on 'Stage install'
+
+the changes now will appear below in the box 'Staged Changes'
+
+Now you have to insert the Commit message (any text you wish)
+
+Click on Commit to Master!
+
+Now on the right side of the bar there will appear the button
+"Push" (instead of "Fetch")
+
+Click on push to push the changes to the server and you are done!!
+
+So wonderful ..
