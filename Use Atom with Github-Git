@@ -1,20 +1,47 @@
 How to use Atom with Githu (EASIEST WAY POSSIBLE)
 
 First download Git for Windows, Mac or linux
+You have to set your global user and email
+
+open the command line and:
+
+Set your username:
+git config --global user.name "FIRST_NAME LAST_NAME"
+
+Set your email address:
+git config --global user.email "MY_NAME@example.com"
+
+DONE!
+
+
 Then install Atom editor (It's FOSS)
 
-Then open the Editor press
+Then open the Editor
+
+it will ask you to create a repository to init
+
+it will also ask you (probably) to add a username and an email
+
+
+
+then press
 
 ctrl+shift+p
 
 type Github clone
 
-Go to github and copy the HTTS url for the repository you want to clone.
+Go to github and copy the HTTPS url for the repository you want to clone.
 
 Paste the url
 click on clone
 
-Atom will ask to connect with your credentials and sync with github
+Now is cloned!
+
+In order to push your commits Atom will ask to connect with your credentials
+
+and sync with github, asking for a code (token)
+
+Once you have put the token you will be able to push your commits!
 
 Done!
 
