@@ -1,0 +1,29 @@
+at the moment the Button Fetch and therefore Pull don't work properly.
+
+to overcome this just use terminal:
+
+this means that if you have done an edit outside of atom you will not be able
+to retrieve changes.
+
+therefore
+
+open terminal
+
+go with cd to your repository
+
+cd myrepository
+
+when you are inside your repository just do:
+
+git fetch
+
+Sometimes (and only sometimes) the button 'Fetch' in Atom will become 'Pull'
+
+when this does not happen just type
+
+git pull
+
+to download and sync changes.
+
+when files will be synced they will appear in the project bar of atom (as
+this works only like a mirror of what is inside the folders)
