@@ -1,13 +1,11 @@
-at the moment the Button Fetch and therefore Pull don't work properly.
-
-to overcome this just use terminal:
+at the moment the Button Fetch and therefore Pull don't work properly
+(this is only in Mac. In Windows 'Fetch' works properly)
 
 this means that if you have done an edit outside of atom you will not be able
 to retrieve changes.
 
-therefore
+To overcome this just use terminal (as git is installed):
 
-open terminal
 
 go with cd to your repository
 
@@ -19,11 +17,11 @@ git fetch
 
 Sometimes (and only sometimes) the button 'Fetch' in Atom will become 'Pull'
 
-when this does not happen just type
+when this does not happen just type:
 
 git pull
 
-to download and sync changes.
+to download and sync changes via command line.
 
 when files will be synced they will appear in the project bar of atom (as
 this works only like a mirror of what is inside the folders)
