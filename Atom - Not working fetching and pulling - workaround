@@ -30,3 +30,8 @@ UPDATE:
 after running these commands via command line. Button 'Fetch' seems to work.
 
 No idea why Atom is acting strange..
+
+
+to install git in mac you have to install xcode:
+
+xcode-select --install
