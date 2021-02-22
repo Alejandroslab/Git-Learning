@@ -25,3 +25,8 @@ to download and sync changes via command line.
 
 when files will be synced they will appear in the project bar of atom (as
 this works only like a mirror of what is inside the folders)
+
+UPDATE:
+after running these commands via command line. Button 'Fetch' seems to work.
+
+No idea why Atom is acting strange..
