@@ -1,6 +1,13 @@
-How to use Atom with Githu (EASIEST WAY POSSIBLE)
+How to use Atom with Github (EASIEST WAY POSSIBLE)
 
 First download Git for Windows, Mac or linux
+
+In Windows Git will provide an useful BASH emulation Tool
+in order to have the linux terminal on Windows just for Git
+(any command as known in linux will be avaible. this is to avoid using
+windows cmd)
+
+
 You have to set your global user and email
 
 open the command line and:
