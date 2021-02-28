@@ -17,3 +17,11 @@ Therefore in settings change the path to:
 C:\\Program Files\\Git\\bin\\bash.exe
 
 and Git Bash will replace PowerShell
+
+
+there is also a package called 'term2' that seems to run more than 1 terminal side by side
+nodejs seems to be needed.
+
+to check if you have nodejs installed in windows open PowerShell and
+
+node -v
