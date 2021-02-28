@@ -1,3 +1,19 @@
 Go to preferences
 
 then install and look for 'platformio-ide-terminal'
+
+In settings you can change the terminal.
+In Windows it will be by default PowerShell.
+
+You change it with ubuntu if you have Windwos Subsystem Linux.
+
+However, interoperability with Windows is not supported making Ubuntu for Windows 10
+not too much useful.
+
+Anyways, you can change PowerShell with 'Git Bash' that comes already installed with Git.
+
+Therefore in settings change the path to:
+
+C:\\Program Files\\Git\\bin\\bash.exe
+
+and Git Bash will replace PowerShell
