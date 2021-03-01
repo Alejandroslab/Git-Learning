@@ -1,0 +1,8 @@
+To SAFELY remove a project from project tab
+
+right click then 'Remove Project Folder'
+
+now open explorer, find the folder and you can delete it!
+
+never delete the folder in explorer without removing it from the projects inside atom!
+It will produce a constant error like 'Unable to locate project folder' every time you startup atom
