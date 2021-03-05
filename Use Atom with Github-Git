@@ -1,5 +1,6 @@
 How to use Atom with Github (EASIEST WAY POSSIBLE)
 
+
 First download Git for Windows, Mac or linux
 
 In Windows Git will provide an useful BASH emulation Tool
@@ -54,6 +55,15 @@ Done!
 
 
 ----
+
+REMEMBER: if git buttons does not work you have to install eventually xcode
+ xcode-select --install after every upgrade of macos
+
+ REMEMBER: the fastest way to make git work is using terminal therefore install
+ 'platformio-ide' package inside atom in order to have a terminal of quickly access
+if git produces some sort of error (as xcrun not available) you have to install xcode
+with the usual command :  xcode-select --install
+
 
 Some basics usage:
 
