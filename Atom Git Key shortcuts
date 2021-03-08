@@ -1,0 +1,30 @@
+
+After having done all the changes to your file:
+
+STAGE CHANGES
+In my case the stage and unstage changes are:
+
+alt + g s (to stage)
+
+alt + g z (to unstage)
+
+(see how to set these keybindings as they are not set by default.)
+
+that means first press alt+ g both
+then release and quickly press s (to stage changes)
+
+
+COMMIT
+
+Insert a message then, to commit to master, press:
+
+alt + g enter
+
+or:
+ctrl+ enter
+
+
+PUSH!
+to push you commit to the server press:
+
+alt+ g p

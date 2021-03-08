@@ -1,0 +1,43 @@
+Atom provides a very nice way to manage shortcuts or keybindings
+every package will have its own keybinding and you can see them in settings->keybindings
+you can even search them by commands as every package will have its own commands
+
+you can open settings quickly with 'ctrl ,' in windows and 'cmd ,' in macOS
+
+
+Github will have its own commands like 'github:clone' or 'github:commit'
+
+anyways it misses the shortcut to stage all the changes.
+the command to do that is 'github:stage-all-changes'
+
+if we search in settings->keybinding we will not find any shortcut but we can create one opening the 'keymap' file (that is a .cson file)
+
+you can access it directly from settinge-->keybindings in the message at the top:
+
+'You can override these keybindings by copying and pasting them into your keymap file'
+click on keymap file
+now go to the last line of the file and paste this:
+
+'.workspace':
+  'alt-g s': 'github:stage-all-changes'
+
+  this will add the shortcut alt-g s to the command 'github:stage-all-changes' (you can set any shortcut you want)
+
+save the keymap file with ctrl +s and you are done! (no need to restart atom)
+
+now if you want to add more shortucts that are related to workspace just add another line below
+
+in this case I want add 'unstage all' shortcut therefore the piece of keymap will be:
+
+
+'.workspace':
+  'alt-g s': 'github:stage-all-changes'
+  'alt-g z': 'github:unstage-all-changes'
+
+
+where the 'unstage all' command will have the shortcut 'alt-g z'
+
+remember! if you have any trouble maybe the command is not correct (as for example the stage command is 'github:stage-all-changes' and not 'github:stage-all' )
+or you have overridden another keybinding. to try the keybindgs run the 'keybinding resolver'
+
+you will find it in 'Packages->Keybinding Resolver' 
