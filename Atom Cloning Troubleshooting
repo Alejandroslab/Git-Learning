@@ -16,3 +16,7 @@ the folder not synced (it will be empty)
 Close and reopen atom
 
 Now clone again and it will work.
+
+
+Therefore 'Cloning not availble in the present state' basically will appear because you have already
+cloned the folder and it is already present in the working directory.
