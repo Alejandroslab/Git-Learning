@@ -41,6 +41,11 @@ alt+g p
 to push
 
 
+If it says error and that you are behind of your counterpart
+you need to pull first the changes from the server
+
+
+
 PUSH!
 to push you commit to the server press:
 
