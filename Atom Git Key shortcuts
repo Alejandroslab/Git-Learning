@@ -23,6 +23,23 @@ alt + g enter
 or:
 ctrl+ enter
 
+REMEMBER ! you can also first write the commit message and then
+stage and so on.
+That means you can
+alt + g enter
+
+then write the commit message then
+
+alt+g s
+to stage the changes
+
+again alt+g enter
+
+and finally
+
+alt+g p
+to push
+
 
 PUSH!
 to push you commit to the server press:
