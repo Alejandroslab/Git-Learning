@@ -40,6 +40,15 @@ and finally
 alt+g p
 to push
 
+in this way is faster as you:
+
+1) write the COMMIT message then:
+2) alt +g s
+3) alt +g enter
+4) alt +g p
+
+Done!
+
 
 If it says error and that you are behind of your counterpart
 you need to pull first the changes from the server
