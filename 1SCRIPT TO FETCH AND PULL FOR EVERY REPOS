@@ -1,0 +1,10 @@
+Just launch this in your working folder
+(usually called 'github')
+
+this works on mac/linux:
+
+
+for i in */.git; do ( echo $i; cd $i/..; git pull; ); done
+
+
+this
