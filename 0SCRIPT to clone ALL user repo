@@ -1,0 +1,35 @@
+In order to clone all the user repo (private and public) you can use this script
+
+requirements:
+
+1)ssh connection with github enabled
+2)Enabled OAuth token
+
+for the 1) first point just see 'SSH set up'
+
+for the 2)
+
+go on github and go to
+
+Settings->Developer settings->Personal access tokens
+
+provide a label and check the box next to 'repo'
+
+click save
+
+ a code will be generate. copy that code(that is the token)
+ remember that this will only be displayed Once
+ if you need to see again you have to create a new token
+
+Now open your terminal and type:
+
+ for i in `curl -H "Authorization: token [TOKEN]" https://api.github.com/user/repos?per_page=100 | grep ssh_url | cut -d ':' -f 2-3|tr -d '",'`; do git clone $i; done
+
+replace [TOKEN] with your copied token (delete the squared brackets) e.g.
+
+for i in `curl -H "Authorization: token 21381892ydhskvfa" https://a.....
+
+done!
+
+now it will download all the repo of the user!
+so nice and easy
