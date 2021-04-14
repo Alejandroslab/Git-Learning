@@ -7,4 +7,4 @@ this works on mac/linux:
 for i in */.git; do ( echo $i; cd $i/..; git pull; ); done
 
 
-on Windows see Windows PowerShell repository
+on Windows: see Windows PowerShell repository
