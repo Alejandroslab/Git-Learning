@@ -28,5 +28,7 @@ Copy the code inside the file.
 
 Go to github->settings> SSH and GPG Keys-> click on New SSH Key-> put a title and paste the code of the id_rsa.pub
 
+(the code will begin with 'ssh-rsa...'. Paste it with 'ssh-rsa')
+
 click on add and you are done!
 
