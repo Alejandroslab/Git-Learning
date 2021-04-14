@@ -21,8 +21,12 @@ again it will ask for the passphrase previously set. then will print
 
 'Identity added : ~/.ssh/id_rsa/ etc....'
 
+
+
 #Finally you could go to your working (Home) folder enter in the folder .ssh (that is hidden) and open the file 
 id_rsa.pub
+REMEMBER! Open it with 'vi' and not 'nano' as the latter could have some problems viewing the public key
+Remember that the public key is very long (more than 6 lines of code)
 
 Copy the code inside the file.
 
