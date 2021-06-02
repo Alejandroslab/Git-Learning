@@ -1,13 +1,14 @@
 How to use Atom with Github (EASIEST WAY POSSIBLE)
 
 
-First download Git for Windows, Mac or linux
+1) First download Git for Windows, Mac or linux
 
 In Windows Git will provide an useful BASH emulation Tool
 in order to have the linux terminal on Windows just for Git
 (any command as known in linux will be avaible. this is to avoid using
 windows cmd)
 
+Open Git BASH
 
 You have to set your global user and email
 
@@ -22,7 +23,7 @@ git config --global user.email "MY_NAME@example.com"
 DONE!
 
 
-Then install Atom editor (It's FOSS)
+2) install Atom editor (It's FOSS)
 
 Then open the Editor
 
@@ -32,7 +33,7 @@ it will also ask you (probably) to add a username and an email
 
 
 
-then press
+3) then press
 
 ctrl+shift+p
 
@@ -53,9 +54,11 @@ Once you have put the token you will be able to push your commits!
 
 Done!
 
+there is no need to specify any branch! it will automatically be added your branch when cloning
+
 
 ----
-
+IN MAC:
 REMEMBER: if git buttons does not work you have to install eventually xcode
  xcode-select --install after every upgrade of macos
 
@@ -64,7 +67,7 @@ REMEMBER: if git buttons does not work you have to install eventually xcode
 if git produces some sort of error (as xcrun not available) you have to install xcode
 with the usual command :  xcode-select --install
 
-
+-------------------
 Some basics usage:
 
 Keep open the Git panel on Atom on the right
