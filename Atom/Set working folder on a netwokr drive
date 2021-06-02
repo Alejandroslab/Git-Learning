@@ -1,0 +1,29 @@
+Let's say that we don't want to store the github repos in the usual and default location
+
+C:\\Users\MyUser\github
+
+we can choose any folder even network folders and even if the path contains spaces
+In the case of network folder we must know that windows usually use this syntax:
+
+\\myserver\myfolder
+
+the double slash will not work inside atom but also with bash
+therefore it is recomended (but i have not tried to clone with the syntax above) to map the folder
+
+to do that go to 'MyPC' in File Explorer click on 'Computer'  and select 'Connect a network drive'
+
+Select a letter and select your folder
+
+let's say
+
+D:\\myserver\myfolder
+
+now Git Bash will be able to process the cloning inside this folder (i  have not tried with Atom as it hsa some problmes cloning sometimes)
+
+NOTES:
+the only thing to know is that cloning but also some operations like copy will be a little bit slower
+
+Also if your server or NAS does have an internal recycle bin then you will not able to delete files
+You will have to do by command line (use platformio terminal)
+
+Another thing to notice is that when you edit a file and you want to commit it will be slower when checking the changes
