@@ -40,4 +40,9 @@ DONE!
 If everything works well and you can see your files it is definitely an Atom problem.
 
 To use this repo on Atom simply open Atom and 'File->Add Project Folder'
-Everything will work! even push and pull as you have correclty set up the ssh connection 
+Remember! Just add the folder of the repositories and not the parent
+e.g parent folder: 'github'
+repos: 'Excel' 'Python'
+just select the 'Excel' and 'Python' folders
+
+Everything will work! even push and pull as you have correclty set up the ssh connection

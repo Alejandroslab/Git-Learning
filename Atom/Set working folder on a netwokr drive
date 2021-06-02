@@ -26,4 +26,5 @@ the only thing to know is that cloning but also some operations like copy will b
 Also if your server or NAS does have an internal recycle bin then you will not able to delete files
 You will have to do by command line (use platformio terminal)
 
-Another thing to notice is that when you edit a file and you want to commit it will be slower when checking the changes
+Another thing to notice is that when you edit a file and you want to commit it will be slower when checking changes (in the Git panel
+changes will appear slower)
