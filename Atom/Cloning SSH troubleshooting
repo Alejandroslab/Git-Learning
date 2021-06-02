@@ -1,0 +1,43 @@
+If you incurr in some problems cloning in Atom when after have set up the SSH connection
+firt test the ssh connection:
+
+In windows open Git Bash and type:
+ssh -T git@github.com
+You may see a warning like this:
+
+> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+> RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+> Are you sure you want to continue connecting (yes/no)?
+
+check that the public key fingerprint coincides:
+
+
+These are GitHub's public key fingerprints:
+
+    SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8 (RSA)
+    SHA256:br9IjFspm1vxR3iA35FWE+4VTyz1hYVLIE2t1/CeyWQ (DSA)
+
+    If it does, then type yes:
+
+Now this message will appear:
+> Hi your_username! You've successfully authenticated, but GitHub does not
+> provide shell access.
+
+
+DONE! this means that the SSH connection is working.
+If you cannot clone in Atom this must be a problem of Atom and not on the establishment of the ssh connection
+
+To cloning anyways you can do it wit Git Bash
+copy your ssh link that has this format:
+
+git@github.com:YOUR_USERNAME/YOUR_REPOSITORY.git
+
+now go to your desired working folder and clone it typing:
+
+git clone git@github.com:YOUR_USERNAME/YOUR_REPOSITORY.git
+
+DONE!
+If everything works well and you can see your files it is definitely an Atom problem.
+
+To use this repo on Atom simply open Atom and 'File->Add Project Folder'
+Everything will work! even push and pull as you have correclty set up the ssh connection 
