@@ -40,4 +40,17 @@ where the 'unstage all' command will have the shortcut 'alt-g z'
 remember! if you have any trouble maybe the command is not correct (as for example the stage command is 'github:stage-all-changes' and not 'github:stage-all' )
 or you have overridden another keybinding. to try the keybindgs run the 'keybinding resolver'
 
-you will find it in 'Packages->Keybinding Resolver' 
+you will find it in 'Packages->Keybinding Resolver'
+
+REMEMEBR! THE KEYMAP MUST BE PROPERLY INDENTED:
+In this Coffee language this is correct:
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'f5': 'script:run'
+
+while this is not:
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+'f5': 'script:run'
+
+this latter will result in an error as it is not properly indented 
