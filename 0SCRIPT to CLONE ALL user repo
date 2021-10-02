@@ -33,3 +33,8 @@ done!
 
 now it will download all the repo of the user!
 so nice and easy
+
+UPDATE! THIS CODE WILL NOT WORK IN POWERSHELL OR CMD
+A possible workaround is to donwload Git and install it in Windows if you have not already done it.
+Then open 'Git bash'
+move to the folder you want to clone all your repo and you are done
