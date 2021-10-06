@@ -1,9 +1,0 @@
-ctrl+k ctrl+u <- for uppercase
-ctrl+k ctrl+l <- for lowercase
-
-otherwise if you want to use the usuale shortcut as in Microsoft (shift+F3)
-
-then download the package
-atom-change-case-menu
-
-install it and done! you will have the shift+F3 shortcut 
