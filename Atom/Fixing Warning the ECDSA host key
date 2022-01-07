@@ -1,0 +1,8 @@
+Warning: the ECDSA host key for 'myserver'
+differs from the key for the IP address '192.168.1.123'
+
+in this case you have to just remove the address from the ssh's hosts file
+
+you can do this easily opening powershell and run this:
+
+ssh-keygen -R 192.168.1.123
