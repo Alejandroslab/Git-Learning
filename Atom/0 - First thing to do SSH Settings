@@ -17,7 +17,9 @@ it will ask for the passphrase previously set and it will print something like:
 
 ssh-add ~/.ssh/id_rsa
 
-again it will ask for the passphrase previously set. then will print
+again it will ask for the passphrase previously set.
+If you have not put anything it will not ask any password
+then will print
 
 'Identity added : ~/.ssh/id_rsa/ etc....'
 
