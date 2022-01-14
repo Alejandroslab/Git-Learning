@@ -1,0 +1,3 @@
+To remove the line look for the Wrap Guide inside the packages and disable it
+
+To automatically enable the soft wrap just go to Settings->Editor and flag the 'Soft Wrap' option
