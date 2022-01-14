@@ -1,3 +1,3 @@
 # Git, Atom, Github, Github Markdown
 
-Quick guide to Git and others. 
+Quick guide to Git and Atom. 
