@@ -1,0 +1,15 @@
+after setting up the ssh connection
+just clone your repo ctrl+shift +p using the ssh link
+
+it will ask for the name and the email
+
+if the ssh link will not clone anything proceed using the https link
+then you will have to fix the https problem followin the instructions in the other file
+
+REMEMBER! You can now use the new 'gh' commands by Github
+With them you can link easily your account (but first need to setup the ssh connection)
+and the clone your repos
+
+Atom will not be able to read them automatically and put them in the Projects tab
+You have to open the new repos and then drag them to you current working windows
+(inside the Project tab)

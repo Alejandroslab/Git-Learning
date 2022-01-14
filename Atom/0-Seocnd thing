@@ -1,7 +1,0 @@
-after setting up the ssh connection
-just clone your repo ctrl+shift +p using the ssh link
-
-it will ask for the name and the email
-
-if the ssh link will not clone anything proceed using the https link
-then you will have to fix the https problem followin the instructions in the other file
