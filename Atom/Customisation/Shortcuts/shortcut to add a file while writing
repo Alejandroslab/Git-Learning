@@ -1,0 +1,5 @@
+Just add this last line:
+
+'.workspace':
+  'alt-g s': 'github:stage-all-changes'
+  'alt-a a': 'tree-view:add-file'
