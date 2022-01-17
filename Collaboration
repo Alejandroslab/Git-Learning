@@ -1,0 +1,12 @@
+Go to your repo page then:
+
+settings>Collaborators
+
+and add the email of your pals
+
+After adding your pals they will be able to clone and push changes
+
+Every person will work on a separate branch (never work directly on the main branch) as usually everyone will have a different piece of the program to be developed.
+
+After finishing one guy of the team will be in charge of merging
+Every one will push their changes and the merging guy will be in charge of merge the code (the separate branches) to the main code (the main branch)
