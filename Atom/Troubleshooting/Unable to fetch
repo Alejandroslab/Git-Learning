@@ -1,0 +1,5 @@
+If the Atom GUI will not allow you to fetch just run the terminal
+
+git fetch
+
+git pull 
