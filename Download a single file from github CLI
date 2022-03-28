@@ -2,8 +2,8 @@ This will not work with powershell but will work with bash and zsh
 
 first locate the file that you want to download 
 open it in github
-then select raw link 
-copy the raw link
+clcik on the 'Raw' button
+now copy the raw link in the address bar
 
 
 finally:
