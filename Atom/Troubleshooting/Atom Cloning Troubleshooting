@@ -10,10 +10,11 @@ If appears the error
 
 'Cloning not availble in the present state'
 
-you should go to the folder in which you have synced your repository and delete
+First close atom !
+then you should go to the folder in which you have synced your repository and delete
 the folder not synced (it will be empty)
 
-Close and reopen atom
+Now reopen atom
 
 Now clone again and it will work.
 
