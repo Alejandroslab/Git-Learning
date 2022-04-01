@@ -23,7 +23,11 @@ click save
 
 Now open your terminal and type:
 
- for i in `curl -H "Authorization: token [TOKEN]" https://api.github.com/user/repos?per_page=100 | grep ssh_url | cut -d ':' -f 2-3|tr -d '",'`; do git clone $i; done
+
+
+for i in `curl -H "Authorization: token [TOKEN]" https://api.github.com/user/repos?per_page=100 | grep ssh_url | cut -d ':' -f 2-3|tr -d '",'`; do git clone $i; done
+
+
 
 replace [TOKEN] with your copied token (delete the squared brackets) e.g.
 
@@ -34,7 +38,11 @@ done!
 now it will download all the repo of the user!
 so nice and easy
 
-UPDATE! THIS CODE WILL NOT WORK IN POWERSHELL OR CMD
-A possible workaround is to donwload Git and install it in Windows if you have not already done it.
+UPDATE! THIS CODE WILL NOT WORK IN POWERSHELL OR CMD!
+
+A possible workaround is to use Git in Windows 
 Then open 'Git bash'
 move to the folder you want to clone all your repo and you are done
+
+REMEMBER! If you have set up a password during the setup of your SSH settings then this code will prompt you every time to insert the 
+password that you have setup!

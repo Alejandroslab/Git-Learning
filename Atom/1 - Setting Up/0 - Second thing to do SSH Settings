@@ -3,7 +3,12 @@
 ssh-keygen -t rsa -b 4096 -C "myemail@email.com"
 
 When it asks for 'file in which to save the key' just press enter
-Then it asks for a passphrase (if you want to create one). You can skip it just pressing enter again (it will be asked twice)
+Then it asks for a passphrase (if you want to create one). 
+
+REMEMBER! If you set up a password here then everytime you will fetch, push, pull, clone something you will be asked for the password and this become annoying
+(this is real in particular when you clone all your repos)
+
+You can skip it just pressing enter again (it will be asked twice)
 
 #Second type:
 
