@@ -21,9 +21,10 @@ now go to the last line of the file and paste this:
 '.workspace':
   'alt-g s': 'github:stage-all-changes'
 
-  this will add the shortcut alt-g s to the command 'github:stage-all-changes' (you can set any shortcut you want)
 
-save the keymap file with ctrl +s and you are done! (no need to restart atom)
+This will add the shortcut alt-g s to the command 'github:stage-all-changes' (you can set any shortcut you want)
+
+Finally save the keymap file with ctrl +s and you are done! (no need to restart atom)
 
 now if you want to add more shortucts that are related to workspace just add another line below
 
@@ -53,4 +54,4 @@ while this is not:
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
 'f5': 'script:run'
 
-this latter will result in an error as it is not properly indented 
+this latter will result in an error as it is not properly indented
