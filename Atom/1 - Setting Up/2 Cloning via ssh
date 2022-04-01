@@ -1,0 +1,12 @@
+in atom ctrl+shift+p
+
+select 'Github:Clone'
+
+then type in the link:
+
+git@github.com:user/Repo.git
+
+
+or the command is:
+
+git clone git@github.com:user/Repo.git
