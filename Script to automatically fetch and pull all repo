@@ -2,7 +2,7 @@ It is possible to create a script to automatically fetch and consequently pull a
 
 create a .sh file in the 'github' folder:
 
-(this scriprt was actually made by mnem user)
+(this script was actually made by mnem user)
 
 
 #!/bin/bash
