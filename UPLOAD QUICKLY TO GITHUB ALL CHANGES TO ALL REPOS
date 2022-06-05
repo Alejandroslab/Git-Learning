@@ -1,0 +1,1 @@
+for i in *; do echo && cd $i && pwd && git fetch && git add . && if git commit -m "Update" | grep -q "nothing to commit" ; then echo "There is nothing to push. Your branch is already up to date."; else echo "Ok. Pushing" && git commit -m "Update $(date +%Y%m%d)" && git push ; fi; git pull && git push && cd ..; done
