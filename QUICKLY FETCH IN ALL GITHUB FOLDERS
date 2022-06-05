@@ -1,0 +1,1 @@
+for i in *; do cd $i && pwd && git fetch && cd ..; done

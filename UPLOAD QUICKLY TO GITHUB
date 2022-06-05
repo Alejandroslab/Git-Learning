@@ -1,5 +1,18 @@
-git add . && git commit -m "Update" && git push
+git commit -m "Update"
 
 or PowerShell:
 
 git add . ; git commit -m "Update" ; git push
+
+
+for i in *; do echo && cd $i && pwd && echo "Fetching.." && git fetch && echo "Pushing now.." && git add . && git commit -m "Update" && git push && cd .. ; done
+
+
+for i in *; do cd $i && pwd && git fetch && cd ..; done
+
+
+for i in *; do cd $i && pwd && if [[ $(git add .) = *Your branch is up* ]]; then echo "Found a Tomcat!" ; fi; done
+
+
+git add . && msg="rebuilding site $(date)" && if [ -n "$*" ]; then msg="$*"; fi
+&& git commit -m "$msg" && git push && cd ..; done
