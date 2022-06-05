@@ -1,14 +1,50 @@
+#This is the command we must run in any folder:
+#myuser is still the same while my repo will change
 
-git remote set-url origin git@github.com:myuser@myrepo.git
+git remote set-url origin git@github.com:myuser@$MYREPO.git
+
+#we want to do this for all the repos we have
 
 
-var2=(*)
 
-printf '%s \n' "${var2[@]}"
+#FIRST CREATE ARRAY WITH ALL GIT FOLDERS
+#move to your github folder and run:
 
-for i in "${var2[@]}"
+arr2=(*)
+
+#this will catch alll folders in an array (just the names)
+
+#PRINTING to check:
+printf '%s \n' "${arr2[@]}"
+
+#REMOVE THE LAST ELEMENT:
+unset 'arr2[${#arr2[@]}-0]'
+
+
+#Now we must enter in any subfolder and run the command:
+
+git remote set-url origin git@github.com:myuser@$MYREPO.git
+
+therefore:
+
+for i in "${arr2[@]}"
 do
-echo $i
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git remote set-url origin git@github.com:myuser@$i.git" \;
 done
 
-find . maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && printf '%s \n' "${var2[@]}"" \;
+or in one line:
+
+for i in "${arr2[@]}"; do find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git remote set-url origin git@github.com:alejandroslab@$i.git" \; ; done
+
+#be careful and don't delete the '/;' before the '; done' as this is part of the exec
+
+done!
+
+
+now to check we must run:
+
+git remote -v
+
+therefore go on the parent folder of github and run:
+
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git remote -v" \;
