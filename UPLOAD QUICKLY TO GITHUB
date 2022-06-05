@@ -3,3 +3,8 @@ git add . && git commit -m "Update $(date +%Y-%m-%d_%H-%M-%S)" && git push
 or PowerShell:
 
 git add . ; git commit -m "Update" ; git push
+
+
+
+
+for f in *; do  [ "$f" != "*.sh" ] && echo "$f"; done
