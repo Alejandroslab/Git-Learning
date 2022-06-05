@@ -1,8 +1,5 @@
-git add . && git commit -m "Update $(date +%Y%m%d)" && git push 
+git add . && git commit -m "Update $(date +%Y%m%d)" && git push
 
 or PowerShell:
 
 git add . ; git commit -m "Update" ; git push
-
-
-for i in *; do echo && cd $i && pwd && echo "Fetching.." && git fetch && echo "Pushing now.." && git add . && git commit -m "Update" && git push && cd .. ; done
