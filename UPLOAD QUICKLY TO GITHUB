@@ -11,4 +11,4 @@ for i in *; do echo && cd $i && pwd && echo "Fetching.." && git fetch && echo "P
 for i in *; do cd $i && pwd && git fetch && cd ..; done
 
 
-for i in *; do cd $i && pwd && git add . && if git commit -m "Update" | grep -q "nothing to commit" ; then echo "Your branch is already updated"; else echo "Ok. Pushing" && git commit -m "Update $(date +%Y%m%d)" && git push ; fi; cd ..; done
+for i in *; do echo && cd $i && pwd && git add . && if git commit -m "Update" | grep -q "nothing to commit" ; then echo "Your branch is already up to date."; else echo "Ok. Pushing" && git commit -m "Update $(date +%Y%m%d)" && git push ; fi; cd ..; done
