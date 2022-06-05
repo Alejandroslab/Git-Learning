@@ -1,7 +1,7 @@
 #This is the command we must run in any folder:
 #myuser is still the same while my repo will change
 
-git remote set-url origin git@github.com:myuser@$MYREPO.git
+git remote set-url origin git@github.com:myuser/$MYREPO.git
 
 #we want to do this for all the repos we have
 
@@ -10,7 +10,7 @@ EASY WAY:
 
 to change from https to ssh just move to your github folder and then:
 
-for i in *; do cd $i && echo && echo $i && git remote set-url origin git@github.com:alejandroslab@$i.git && cd ..; done
+for i in *; do cd $i && echo && echo $i && git remote set-url origin git@github.com:alejandroslab/$i.git && cd ..; done
 
 
 to check everything went well:
@@ -41,7 +41,7 @@ for i in "${arr2[@]}"; do echo $i; done
 
 #Now we must enter in any subfolder and run the command:
 
-git remote set-url origin git@github.com:myuser@$MYREPO.git
+git remote set-url origin git@github.com:myuser/$MYREPO.git
 
 
 we can check our situation with:
