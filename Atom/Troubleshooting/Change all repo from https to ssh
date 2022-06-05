@@ -1,0 +1,14 @@
+
+git remote set-url origin git@github.com:myuser@myrepo.git
+
+
+var2=(*)
+
+printf '%s \n' "${var2[@]}"
+
+for i in "${var2[@]}"
+do
+echo $i
+done
+
+find . maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && printf '%s \n' "${var2[@]}"" \;
