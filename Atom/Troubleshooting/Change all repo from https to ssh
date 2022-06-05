@@ -6,13 +6,27 @@ git remote set-url origin git@github.com:myuser@$MYREPO.git
 #we want to do this for all the repos we have
 
 
+EASY WAY:
 
+to change from https to ssh just move to your github folder and then:
+
+for i in *; do cd $i && echo && echo $i && git remote set-url origin git@github.com:alejandroslab@$i.git && cd ..; done
+
+
+to check everything went well:
+
+for i in *; do cd $i && echo && echo $i && git remote -v && cd ..; done
+
+
+
+
+#HARDER WAY (nested bash)
 #FIRST CREATE ARRAY WITH ALL GIT FOLDERS
 #move to your github folder and run:
 
 arr2=(*)
 
-#this will catch alll folders in an array (just the names)
+#this will catch all folders in an array (just the names)
 
 #PRINTING to check:
 printf '%s \n' "${arr2[@]}"
@@ -20,31 +34,43 @@ printf '%s \n' "${arr2[@]}"
 #REMOVE THE LAST ELEMENT:
 unset 'arr2[${#arr2[@]}-0]'
 
+#check with for:
+
+for i in "${arr2[@]}"; do echo $i; done
+
 
 #Now we must enter in any subfolder and run the command:
 
 git remote set-url origin git@github.com:myuser@$MYREPO.git
 
-therefore:
 
-for i in "${arr2[@]}"
-do
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git remote set-url origin git@github.com:myuser@$i.git" \;
-done
-
-or in one line:
-
-for i in "${arr2[@]}"; do find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git remote set-url origin git@github.com:alejandroslab@$i.git" \; ; done
-
-#be careful and don't delete the '/;' before the '; done' as this is part of the exec
-
-done!
-
-
-now to check we must run:
+we can check our situation with:
 
 git remote -v
 
+we have seen a command that will automatically loop on any subfolder without for loop
+
+
 therefore go on the parent folder of github and run:
 
-find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && git remote -v" \;
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git remote -v" \;
+
+we can also see more usage of this:
+
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && echo "hello"  "  \;
+
+here we will find issues as without curly brackets the 'pwd' command will output referring to the first bash command line
+(and not the second one that refers to the subfolders)
+
+find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && echo '{$(pwd | cut -d '/' -f 4).git}''"  \;
+
+
+#be careful and don't delete the '/;' before the '; done' as this is part of the exec
+
+As we have seen, this command will inkove another bash line inside the subfolders.
+the problem here that we must indicate everytime to which bash line you are referring to.
+As you can see cd '{}' will run the 'cd' inside the subfolder and not the parent directory
+from there we can run a simple 'pwd' and the output will be the subfolder path.
+
+Anyways if we want then to run 'pwd' and use also 'cut' inside the subfolder we will also need to indicate that.
+This is not so trivial as piping will not work properly if we are not careful enough (if we add a pipe and another cut the command will not work. We will probably need more curly brackets ...)
